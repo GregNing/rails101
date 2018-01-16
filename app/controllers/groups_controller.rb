@@ -85,7 +85,7 @@ class GroupsController < ApplicationController
         redirect_to group_path(@group)
     end
     private
-    def find_geoup_and_check_permission
+    def find_group_and_check_permission
         @group = Group.find(params[:id])
 
         if current_user != @group.user
