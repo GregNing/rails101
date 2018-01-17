@@ -5,10 +5,11 @@ resources :groups do
 member do
 post :join
 post :quit    
-end
 resources :posts
 end
 resources :posts
+end
+
 namespace :account do
   resources :groups
   resources :posts
