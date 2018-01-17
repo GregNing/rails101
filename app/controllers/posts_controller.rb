@@ -39,7 +39,7 @@ end
 
     def destroy
         @post.destroy
-        redirect_to account_posts_path, notice: "Delete Success"
+        redirect_to account_posts_path, alert: "Delete Success"
     end
 
 private
