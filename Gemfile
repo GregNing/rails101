@@ -44,8 +44,10 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
 end
-gem 'pg', '~> 0.20'
-group :production do  
+
+gem 'pg', '~> 0.18'
+
+group :production do   
   gem 'rails_12factor'
 end
 
